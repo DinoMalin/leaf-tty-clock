@@ -252,6 +252,7 @@ draw_clock(void)
                      ttyclock.geo.h);
      }
 
+     printf("\033]4;2;rgb:a3/ff/95\033\\\n");
      /* Draw hour numbers */
      draw_number(ttyclock.date.hour[0], 1, 1);
      draw_number(ttyclock.date.hour[1], 1, 8);
